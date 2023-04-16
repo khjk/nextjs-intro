@@ -1,3 +1,4 @@
+import Layout from "@/components/Layout";
 import NavBar from "../components/NavBar";
 import "../styles/globals.css"
 /**
@@ -5,14 +6,13 @@ import "../styles/globals.css"
  */
 export default function App({Component, pageProps}) {
     return (
-    <div>
-        <NavBar/>
+    <Layout>
         <Component {...pageProps}/>
         <style jsx global>{`
             a {
                 color : white;
             }
         `}</style>
-    </div>
+    </Layout>
     );
 }
